@@ -34,3 +34,5 @@ on your terminal:
 cd client
 npm run dev
 ```
+## Acknowledgements
+[Thank you to Javascript Mastery for the tutorial help!](https://www.jsmastery.pro)
