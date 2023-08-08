@@ -11,8 +11,8 @@ Generate visually stunning AI images with your own prompts! Share it to the site
             
 ## Running the app 💻
 ### setting up .env file within server directory
-register for MongoDB database, Cloudinary, and OpenAI API (paid service) to replace the following access keys
-structure your .env file: 
+register for MongoDB database, Cloudinary, and OpenAI API (paid service) to replace the following access keys    
+structure your .env file like the following: 
 ```
 OPENAI_API_KEY=""
 MONGODB_URL=""
