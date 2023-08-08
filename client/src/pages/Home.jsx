@@ -14,6 +14,8 @@ const Home = () => {
     const [loading, setLoading] = useState(false);
     const [allPosts, setAllPosts] = useState(null);
     const [searchText, setSearchText] = useState('');
+    const [searchResults, setSearchedResults] = useState(null)
+    const [searchTimeout, setSearchTimeout] = useState(null)
     
     useEffect(() => {
         const fetchPosts = async () => {
@@ -41,6 +43,21 @@ const Home = () => {
 
         fetchPosts()
     },[])
+
+    // take in key press event
+    const handleSearchChange = (e) =>{
+        setSearchText(e.target.value)
+        
+        setSearchTimeout(
+            // set time frame for avoid running at every key press
+            setTimeout(() =>{
+                const searchResults = allPosts.filter((item) => item.name.toLowerCase().includes(searchText.toLowerCase())
+                || item.prompt.toLowerCase().includes(searchText.toLowerCase()))
+                setSearchedResults(searchResults)
+            }, 500)
+        )
+    }
+
     return (
         <section className="max-w-7xl mx-auto">
             <div>
@@ -53,7 +70,14 @@ const Home = () => {
             </div>
 
             <div className="mt-16">
-                <FormField />
+                <FormField 
+                    labelName="Search posts"
+                    type="text"
+                    name="text"
+                    placeholder="Search posts"
+                    value={searchText}
+                    handleChange={handleSearchChange}
+                />
             </div>
 
             <div className="mt-10">
@@ -73,7 +97,7 @@ const Home = () => {
                         {
                             searchText ? (
                                 <RenderCards
-                                    data={allPosts}
+                                    data={searchResults}
                                     title="No search results found"
                                 />
                             ) : (
