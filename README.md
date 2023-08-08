@@ -3,8 +3,8 @@
 Generate visually stunning AI images with your own prompts! Share it to the site, browse through generated images by other users, and download the images. (demo here)
 
 ## Application Architecture
-|Frontend| React.js, Vite, TailwindCSS
-|Backend|
+| Frontend | React.js, Vite, TailwindCSS
+| Backend | 
 ## Running the app 💻
 ### setting up .env
 
