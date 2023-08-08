@@ -6,7 +6,9 @@ Generate visually stunning AI images with your own prompts! Share it to the site
 | Architecture | Tools|
 | --- | --- |
 | Frontend | React.js, Vite, TailwindCSS
-| Backend | 
+| Backend | Database: MongoDB   
+            Image Storage: Cloudinary   
+            
 ## Running the app 💻
 ### setting up .env
 
