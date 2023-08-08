@@ -28,7 +28,7 @@ on your terminal:
 cd server
 npm run start
 ```
-### 3) client
+### 3) client side
 on your terminal:
 ```
 cd client
