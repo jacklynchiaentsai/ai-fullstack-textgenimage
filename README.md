@@ -10,7 +10,7 @@ Generate visually stunning AI images with your own prompts! Share it to the site
 | AI | OpenAI API
             
 ## Running the app 💻
-### setting up .env file within server directory
+### 1) setting up .env file within server directory
 register for MongoDB database, Cloudinary, and OpenAI API (paid service) to replace the following access keys    
 structure your .env file like the following: 
 ```
@@ -22,7 +22,15 @@ CLOUDINARY_API_KEY=""
 CLOUDINARY_API_SECRET=""
 ```
 
-### server 
+### 2) server side 
+on your terminal:
+```
+cd server
 npm run start
-### client
+```
+### 3) client
+on your terminal:
+```
+cd client
 npm run dev
+```
