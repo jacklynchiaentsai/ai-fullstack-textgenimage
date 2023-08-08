@@ -3,7 +3,7 @@
 Generate visually stunning AI images with your own prompts! Share it to the site, browse through generated images by other users, and download the images. (demo here)
 
 ## Application Architecture
-| Architecture | Tools|
+| Architecture | Technologies|
 | --- | --- |
 | Frontend | React.js, Vite, TailwindCSS
 | Backend | MongoDB (database), Cloudinary(cloud image storage), Express.js (APIs)
