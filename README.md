@@ -1,8 +1,10 @@
 # Full Stack AI Text to Image Generation App 
 ### Powered by OpenAI API's DALL-E model
 Generate visually stunning AI images with your own prompts! Share it to the site, browse through generated images by other users, and download the images.   
-([demo](https://www.youtube.com/watch?v=XzxFDBnQzyY))
+([video demo](https://www.youtube.com/watch?v=XzxFDBnQzyY))
 
+<img width="1512" alt="Screenshot 2023-08-09 at 9 29 56 AM" src="https://github.com/jacklynchiaentsai/ai-fullstack-textgenimage/assets/101374527/f5c285c8-8543-4288-92c8-04d6cfc2647f">
+<img width="1512" alt="Screenshot 2023-08-09 at 9 30 37 AM" src="https://github.com/jacklynchiaentsai/ai-fullstack-textgenimage/assets/101374527/0721a00b-d9fa-489f-89c1-ded4e80b367d">
 
 ## Application Architecture
 | Architecture | Technologies|
